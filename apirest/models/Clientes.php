@@ -30,7 +30,7 @@ class Clientes extends Conectar{
         }
     }
 
-    public function insert_empleado($idCliente,$nombreCliente,$celularCliente,$obraCliente){
+    public function insert_cliente($idCliente,$nombreCliente,$celularCliente,$obraCliente){
         $conectar=parent::Conexion();
         parent::set_name();
         $stm="INSERT INTO empleados(idCliente,nombreCliente,celularCliente,obraCliente) VALUES(?,?,?,?)";

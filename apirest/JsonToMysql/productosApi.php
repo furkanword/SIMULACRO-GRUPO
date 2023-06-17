@@ -39,10 +39,10 @@ $conexion = mysqli_connect($server, $user, $pass,$bd)
 or die("Ha sucedido un error inexperado en la conexion de la base de datos");
 
 
-foreach ($datosproductos as $cliente) {
+foreach ($datosproductos as $producto) {
     
     mysqli_query($conexion,"INSERT INTO productos (idProducto,nombreProducto,precioProducto) 
-    VALUES ('".$cliente['idProducto']."','".$cliente['nombreProducto']."','".$cliente['precioProducto']."')");	
+    VALUES ('".$producto['idProducto']."','".$producto['nombreProducto']."','".$producto['precioProducto']."')");	
         
 }	
 

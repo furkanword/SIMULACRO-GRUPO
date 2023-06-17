@@ -1,6 +1,7 @@
 CREATE DATABASE  alquilartemis_grupo;
 
 
+
 CREATE TABLE empleados(
     idEmpleado INT PRIMARY KEY AUTO_INCREMENT,
     nombreEmpleado VARCHAR(200) NOT NULL,
